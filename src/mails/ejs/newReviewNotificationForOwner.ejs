@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Styles */
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.5;
+      }
+
+      .email {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-body {
+        margin-top: 5px;
+        text-align: center;
+        border: 2px #fefefe solid;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+      }
+
+      img {
+        width: 90px;
+      }
+
+      h1.header {
+        margin-top: 0px;
+        margin-bottom: auto;
+        font-size: 2.5rem;
+        color: #4177ed;
+        text-shadow: 1px 1px 24px rgba(65, 119, 237, 0.52);
+      }
+
+      h1,
+      span {
+        color: black;
+      }
+
+      p {
+        color: #333333;
+        line-height: 1.1;
+      }
+
+      a {
+        text-decoration: none;
+        color: #4177ed;
+      }
+
+      footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #999999;
+        font-size: 14px;
+      }
+    </style>
+    <title>New Review in Your Course</title>
+  </head>
+  <body>
+    <div class="main-body">
+      <img
+        src="https://res.cloudinary.com/dpq5wvou9/image/upload/v1702931141/logo/nzf9ahtrrjrsisgvxjrj.png"
+        alt="logo"
+      />
+      <h1 class="header">Phoenix Company</h1>
+      <div class="email-body">
+        <h1>Hello <span><%= firstName %> <%= lastName %></span>,</h1>
+        <p>A new review has been posted in your course "<%= courseTitle %>":</p>
+        <p>
+          Reviewer: <%= reviewerFirstName %> <%= reviewerLastName %> (<%=
+          reviewerEmail %>)
+        </p>
+        <p>Rating: <%= rating %>/5</p>
+        <p>Review:</p>
+        <p><%= reviewContent %></p>
+        <p>We hope this feedback is helpful for you!</p>
+      </div>
+      <footer>
+        <p>
+          If you have any questions, please don't hesitate to contact us at:
+          <a href="mailto:2022.phoenix.1@gmail.com">2022.phoenix.1@gmail.com</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

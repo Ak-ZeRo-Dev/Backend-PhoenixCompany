@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Email Change Activation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        font-family: Poppins, Arial, sans-serif;
+        line-height: 1.5;
+        background-color: #f4f4f4;
+      }
+
+      .email-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .logo {
+        max-width: 100px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: #4177ed;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      h3,
+      span {
+        color: black;
+      }
+
+      p {
+        color: #333333;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .activation-code {
+        letter-spacing: 1rem;
+        color: #687eff;
+        font-weight: 900;
+        font-size: 2.5rem;
+      }
+      a {
+        text-decoration: none;
+        color: #4177ed;
+      }
+
+      footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #999999;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <img
+        class="logo"
+        src="https://res.cloudinary.com/dpq5wvou9/image/upload/v1702931141/logo/nzf9ahtrrjrsisgvxjrj.png"
+        alt="Company Logo"
+      />
+      <h1>Hello <%= firstName %> <%= lastName %>,</h1>
+      <p>
+        You've initiated an email change request. Please use the following
+        activation code to confirm:
+      </p>
+      <h2 class="activation-code"><%= activationCode %></h2>
+      <p>
+        This code will expire in a few minutes, so please use it promptly to
+        complete the email change process.
+      </p>
+      <p>
+        If you did not initiate this change, please contact our support team
+        immediately.
+      </p>
+      <footer>
+        If you have any questions or concerns, please contact us at:
+        <a href="mailto:2022.phoenix.1@gmail.com">2022.phoenix.1@gmail.com</a>
+      </footer>
+    </div>
+  </body>
+</html>
